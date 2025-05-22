@@ -1,0 +1,54 @@
+---
+title: About me
+education:
+  - period: 2019 – 2022
+    degree: "PhD in Earth Sciences at ETH Zürich"
+    thesis: "Thesis: Understanding long-term petrologic cycles in silicic calderas of Japan"
+    advisors: "O. Bachmann, M. Guillong"
+  - period: 2016 – 2018
+    degree: "M.Sc. in Geosciences at Johannes Gutenberg-Universität Mainz"
+    thesis: "Alteration of volcanic rock and plume chemistry by lightning"
+    advisors: "S. P. Müller, C. Helo, J. Castro"
+  - period: 2013 – 2017
+    degree: "B.Sc. in Geosciences at Johannes Gutenberg-Universität Mainz"
+    thesis: "Lightning-induced melting of volcanic ash: an experimental study"
+    advisors: "S. P. Müller, C. Helo"
+appointments:
+  - period: "08/2023 – present"
+    role: "SNSF postdoctoral research scholar at Lehigh University"
+  - period: "06/2023 – 08/2023"
+    role: "SNSF postdoctoral research scholar at the University of Oregon"
+  - period: "03/2023 – 04/2023"
+    role: "Postdoctoral Researcher at ETH Zürich"
+  - period: "04/2018 – 09/2018"
+    role: "Research Assistant in Geodynamics and Geophysics at Johannes Gutenberg-Universität Mainz"
+  - period: "05/2015 – 01/2016"
+    role: "Research Assistant in Volcanology at Johannes Gutenberg-Universität Mainz"
+---
+<section>
+  <h2>Education</h2>
+  <ul class="timeline">
+    {% for e in page.education %}
+      <li>
+        <span class="date">{{ e.period }}</span>
+        <div class="details">
+          <strong>{{ e.degree }}</strong><br/>
+          {{ e.thesis }}<br/>
+          <em>Advisors:</em> {{ e.advisors }}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section>
+  <h2>Professional Appointments</h2>
+  <ul class="timeline">
+    {% for a in page.appointments %}
+      <li>
+        <span class="date">{{ a.period }}</span>
+        <div class="details">{{ a.role }}</div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
