@@ -41,7 +41,10 @@ title: Publications
     <ul class="timeline">
       {% for c in site.data.conferences %}
         <li>
-          {{ c.authors }} ({{ c.year }}). {{ c.title }}. <em>{{ c.event }}</em>, {{ c.location }}.
+          {% assign authors = p.authors 
+             | replace: 'Ponce G.', '<strong>Ponce G.</strong>' %}
+          {{ authors | strip }} (<strong>{{ p.year }}</strong>). {{ p.title }}. 
+          <em>{{ c.event }}</em>, {{ c.location }}.
         </li>
       {% endfor %}
     </ul>
