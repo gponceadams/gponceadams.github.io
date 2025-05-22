@@ -274,3 +274,17 @@ blockquote:before {
   font-weight: 400;
   color: #333;
 }
+/* presentations & conference lists should be single-column */
+.presentations .timeline,
+.conference-presentations .timeline {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.presentations .timeline li,
+.conference-presentations .timeline li {
+  display: block;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
