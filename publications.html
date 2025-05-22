@@ -10,7 +10,7 @@ title: Publications
       <li>
         {% assign authors = p.authors 
              | replace: 'Ponce G.', '<strong>Ponce G.</strong>' %}
-        {{ authors | strip }} ({{ p.year }}). <em>{{ p.title }}</em>. 
+        {{ authors | strip }} (<strong>{{ p.year }}<strong>). <em>{{ p.title }}</em>. 
         {{ p.journal }}
         {% if p.volume %}, Vol. {{ p.volume }}{% endif %}
         {% if p.issue %} ({{ p.issue }}){% endif %}
