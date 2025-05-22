@@ -1,9 +1,9 @@
 - name: Home
-  link: /pricing/
+  link: /index/
   new_window: false
   highlight: false
 - name: About me
-  link: /blog/
+  link: /aboutme/
   new_window: false
   highlight: false
 - name: Research
