@@ -20,3 +20,26 @@ title: Publications
     {% endfor %}
   </ul>
 </section>
+
+<section class="presentations">
+  <h2>Seminars and Invited Presentations</h2>
+  <ul class="timeline">
+    {% for s in site.data.presentations %}
+      <li>
+        {{ s.institution }}, {{ s.type }} ({{ s.date }})
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="conference-presentations">
+  <h2>Conference Presentations</h2>
+  <h3>Conference Posters</h3>
+  <ul class="timeline">
+    {% for c in site.data.conferences %}
+      <li>
+        {{ c.authors }} ({{ c.year }}). {{ c.title }}. Presented at the <em>{{ c.event }}</em>, {{ c.location }}.
+      </li>
+    {% endfor %}
+  </ul>
+</section>
