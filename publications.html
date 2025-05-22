@@ -8,8 +8,10 @@ title: Publications
   <ul class="pub-list">
     {% for p in site.data.publications %}
       <li>
-        {{ p.authors }} ({{ p.year }}). <em>{{ p.title }}</em>. 
-        <strong>{{ p.journal }}</strong>
+        {% assign authors = p.authors 
+             | replace: 'Ponce G.', '<strong>Ponce G.</strong>' %}
+        {{ authors | strip }} ({{ p.year }}). <em>{{ p.title }}</em>. 
+        {{ p.journal }}
         {% if p.volume %}, Vol. {{ p.volume }}{% endif %}
         {% if p.issue %} ({{ p.issue }}){% endif %}
         {% if p.pages %}, pp. {{ p.pages }}{% endif %}.
