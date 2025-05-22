@@ -279,16 +279,3 @@ blockquote:before {
   background: none;
   padding: 0;
 }
-.hero .text-container {
-  max-width: none;    /* remove the 750px cap */
-  width: 100%;        /* fill the full width */
-  padding: 0;         /* drop the side padding if you like */
-}
-
-.hero .text-container img {
-  width: 100%;
-  height: auto;
-  display: block;
-  background: none;   /* in case screenshot rules kick in */
-  padding: 0;
-}
