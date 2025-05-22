@@ -1,7 +1,3 @@
-- name: Home
-  link: /index/
-  new_window: false
-  highlight: false
 - name: About me
   link: /aboutme/
   new_window: false
