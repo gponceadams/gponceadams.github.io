@@ -43,8 +43,7 @@ title: Publications
         <li>
           {% assign authors = p.authors 
              | replace: 'Ponce G.', '<strong>Ponce G.</strong>' %}
-          {{ authors | strip }} (<strong>{{ p.year }}</strong>). {{ p.title }}. 
-          <em>{{ c.event }}</em>, {{ c.location }}.
+          {{ authors | strip }} (<strong>{{ p.year }}</strong>). {{ p.title }}. <em>{{ c.event }}</em>, {{ c.location }}.
         </li>
       {% endfor %}
     </ul>
