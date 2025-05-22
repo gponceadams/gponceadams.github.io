@@ -1,0 +1,33 @@
+---
+layout: default
+title: Publications
+publications:
+  - authors: "Ponce G., Meltzer A., Wickham A., Hoskins M., Beck S., Ruiz M., Hernandez S., Segovia M., Rodriguez E"
+    year: "2025"
+    title: "Insights into SubductionZone Complexity in the Northern Ecuadorian Forearc from 3D Local Earthquake Tomography"
+    journal: "Geophysical Journal International"
+    doi: "10.22541/essoar.173696996.69408174/v1"
+  - authors: "Alvarado A., Ruiz M., Mothes P., Yepes H., Segovia M., Vaca M., Ramos C., Enriquez W., Ponce G., Jarrin P., Aguilar J., Acero W., Vaca S., Singaucho J., Pacheco D., Cordova A"
+    year: "2018"
+    title: "Seismic, volcanic, and geodetic networks in Ecuador: Building capacity for monitoring and research"
+    journal: "Seismological Research Letters"
+    volume: "89"
+    issue: "2A"
+    pages: "432-439"
+    doi: "10.1785/0220170229"
+  - authors: "Yoshimoto M., Kumagai H., Acero W., Ponce G., Vasconez F., Arrais S., Ruiz M., Alvarado A., Garcia P., Dionicio V., Chamorro O., Maeda Y., Nakano M"
+    year: "2017"
+    title: "Depth‐dependent rupture mode along the Ecuador‐Colombia subduction zone"
+    journal: "Geophysical Research Letters"
+    volume: "44"
+    issue: "5"
+    pages: "2203-2210"
+    doi: "10.1002/2016GL071929"
+  - authors: "Ioualalen M., Monfret T., Bethoux N., Chlieh M., Ponce G., Collot J.Y., Martillo C., Chunga K., Navarrete E., Montenegro G., Solis G"
+    year: "2014"
+    title: "Tsunami mapping in the Gulf of Guayaquil, Ecuador, due to local seismicity"
+    journal: "Marine Geophysical Research"
+    volume: "35"
+    pages: "361-378"
+    doi: "10.1007/s11001-014-9225-9"
+---
