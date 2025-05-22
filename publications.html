@@ -1,0 +1,10 @@
+<section class="publications">
+  <h2>Publications</h2>
+  <ul class="pub-list">
+    {% for p in data.publications %}
+      <li>
+        {{ p.authors }} ({{ p.year }}). <em>{{ p.title }}</em>. <strong>{{ p.journal }}</strong>{% if p.volume %}, Vol. {{ p.volume }}{% if p.issue %} ( {{ p.issue }} ){% endif %}{% endif %}{% if p.pages %}, pp. {{ p.pages }}{% endif %}. DOI: <a href="https://doi.org/{{ p.doi }}">{{ p.doi }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
