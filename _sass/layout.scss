@@ -292,3 +292,29 @@ blockquote:before {
   background: none;   /* in case screenshot rules kick in */
   padding: 0;
 }
+/* stick the header at the top */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* push the page content down so it isn’t hidden behind the fixed header */
+body {
+  padding-top: 60px; /* match your header’s height */
+}
+
+/* inside the header, push logo left and nav links to the right */
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* make the nav links sit horizontally */
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
