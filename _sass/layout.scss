@@ -307,17 +307,23 @@ body {
   padding-top: 60px; /* match your header’s height */
 }
 
-/* make header.container a flex row */
+/* make header a flex row, logo on the left, nav on the right */
 header .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-/* push the nav element all the way to the right */
+/* style the nav links in a row */
 header nav {
-  margin-left: auto;
   display: flex;
-  gap: 1.5rem;  /* space between links */
+  gap: 1.5rem;
+  margin: 0;        /* no extra margin needed now */
+}
+
+/* hide the mobile "☰" toggle on desktop if you don't need it */
+.nav-toggle {
+  display: none;
 }
 /* make section titles match the DOI link color */
 .publications h2,
