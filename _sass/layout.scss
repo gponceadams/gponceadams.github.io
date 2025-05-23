@@ -320,17 +320,27 @@ header nav {
   gap: 1.5rem;  /* space between links */
 }
 /* make section titles match the DOI link color */
-.education h2,
-.experience h2,
-.teaching h2,
-.funding h2 {
-	color: $accent-color;
-	text-align: center;   // ensure they stay centred
-	margin-bottom: 1.5rem;
-}
 .publications h2,
 .presentations h2,
 .conference-presentations h2,
 .conference-presentations h3 {
   color: #c3512d !important;
+}
+/* center About Me sections just like Publications */
+.education,
+.experience,
+.teaching,
+.funding {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.education h2,
+.experience h2,
+.teaching h2,
+.funding h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: $accent-color; /* #c3512d */
 }
