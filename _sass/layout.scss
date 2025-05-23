@@ -311,7 +311,7 @@ body {
 header .container {
   display: flex;
   align-items: center;
-  /* (you can also add justify-content: space-between if you like) */
+  justify-content: space-between;
 }
 
 /* style the nav links in a row */
