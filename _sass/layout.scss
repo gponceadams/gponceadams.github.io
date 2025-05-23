@@ -323,7 +323,11 @@ header nav {
 .education h2,
 .experience h2,
 .teaching h2,
-.funding h2,
+.funding h2 {
+	color: $accent-color;
+	text-align: center;   // ensure they stay centred
+	margin-bottom: 1.5rem;
+}
 .publications h2,
 .presentations h2,
 .conference-presentations h2,
