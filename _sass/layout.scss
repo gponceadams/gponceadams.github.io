@@ -306,15 +306,15 @@ body {
   padding-top: 60px; /* match your header’s height */
 }
 
-/* inside the header, push logo left and nav links to the right */
+/* make header.container a flex row */
 header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-/* make the nav links sit horizontally */
-nav {
+/* push the nav element all the way to the right */
+header nav {
+  margin-left: auto;
   display: flex;
-  gap: 1.5rem;
+  gap: 1.5rem;  /* space between links */
 }
