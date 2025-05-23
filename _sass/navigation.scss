@@ -21,13 +21,24 @@ nav {
 	width: 100%;
 
 	@media #{$mid-point} {
-		text-align: right;
-		position: absolute;
-		top: 13px;
-		right: 0;
-		padding: 0 20px;
+	  /* make the <nav> container sit on the right, not absolute */
+	  nav {
+	    position: static;      /* no longer absolutely positioned */
+	    margin-left: auto;     /* push it to the right in its flex parent */
+	    display: flex;         /* horizontal layout of links */
+	    gap: 1.5rem;           /* space between links */
+	    text-transform: uppercase;
+	    font-size: .8em;
+	  }
+	
+	  /* make each link a nice inline‐block with padding */
+	  nav a {
+	    display: inline-block;
+	    padding: 10px;
+	    color: rgba(255,255,255,.8);
+	    border-bottom: none;
+	  }
 	}
-
 
 	a {
 		margin: 0 3px;
