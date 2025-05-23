@@ -26,6 +26,7 @@ nav {
 	    position: static;      /* no longer absolutely positioned */
 	    margin-left: auto;     /* push it to the right in its flex parent */
 	    display: flex;         /* horizontal layout of links */
+	    align-items: center;
 	    gap: 1.5rem;           /* space between links */
 	    text-transform: uppercase;
 	    font-size: .8em;
