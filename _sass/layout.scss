@@ -318,3 +318,10 @@ header nav {
   display: flex;
   gap: 1.5rem;  /* space between links */
 }
+/* make section titles match the DOI link color */
+.publications h2,
+.presentations h2,
+.conference-presentations h2,
+.conference-presentations h3 {
+  color: #c3512d;
+}
