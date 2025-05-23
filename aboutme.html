@@ -51,56 +51,64 @@ funding:
     period: August-December 2022
 ---
 <section class="education">
-  <h2>Education</h2>
-  <ul class="pub-list timeline">
-    {% for e in page.education %}
-      <li>
-        <span class="date">{{ e.period }}</span>
-        <div class="details">
-          <strong>{{ e.degree }}</strong><br/>
-          {{ e.thesis }}<br/>
-          <em>Advisors:</em> {{ e.advisors }}
-        </div>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="container">
+    <h2>Education</h2>
+    <ul class="pub-list timeline">
+      {% for e in page.education %}
+        <li>
+          <span class="date">{{ e.period }}</span>
+          <div class="details">
+            <strong>{{ e.degree }}</strong><br/>
+            {{ e.thesis }}<br/>
+            <em>Advisors:</em> {{ e.advisors }}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>
 
 <section class="experience">
-  <h2>Professional Experience</h2>
-  <ul class="pub-list timeline">
-    {% for a in page.experience %}
-      <li>
-        <span class="date">{{ a.period }}</span>
-        <div class="details">{{ a.role }}</div>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="container">
+    <h2>Professional Experience</h2>
+    <ul class="pub-list timeline">
+      {% for a in page.experience %}
+        <li>
+          <span class="date">{{ a.period }}</span>
+          <div class="details">{{ a.role }}</div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>
 
 <section class="teaching">
-  <h2>Teaching Experience</h2>
-  <ul class="pub-list timeline">
-    {% for a in page.teaching %}
-      <li>
-        <span class="date">{{ a.period }}</span>
-        <div class="details">{{ a.role }}</div>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="container">
+    <h2>Teaching Experience</h2>
+    <ul class="pub-list timeline">
+      {% for a in page.teaching %}
+        <li>
+          <span class="date">{{ a.period }}</span>
+          <div class="details">{{ a.role }}</div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>
 
 <section class="funding">
-  <h2>Funding</h2>
-  <ul class="pub-list timeline">
-    {% for f in page.funding %}
-    <li>
-      <span class="date">{{ f.amount }}</span>
-      <div class="details">
-        {{ f.award }}<br/>
-        <em>{{ f.period }}</em>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
+  <div class="container">
+    <h2>Funding</h2>
+    <ul class="pub-list timeline">
+      {% for f in page.funding %}
+        <li>
+          <span class="date">{{ f.amount }}</span>
+          <div class="details">
+            {{ f.award }}<br/>
+            <em>{{ f.period }}</em>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>
