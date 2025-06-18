@@ -21,6 +21,19 @@ title: Publications
   </ul>
 </section>
 
+<section class="preparation">
+  <em><h2>Manuscripts in preparation</h2><em>
+  <ul class="pub-list">
+    {% for p in site.data.preparation %}
+      <li>
+        {% assign authors = p.authors 
+             | replace: 'Ponce G.', '<strong>Ponce G.</strong>' %}
+        {{ authors | strip }} (<strong>{{ p.year }}</strong>). <em>{{ p.title }}</em>. 
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
 <section class="presentations">
   <div class="container">
     <h2>Seminars and Invited Presentations</h2>
