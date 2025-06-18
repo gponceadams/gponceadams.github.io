@@ -312,11 +312,13 @@ body {
 }
 
 /* make header a flex row, logo on the left, nav on the right */
-/*header .container {
+header .container {
+  max-width: 100%;
+  padding: 1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}*/
+}
 
 /* style the nav links in a row */
 header nav {
