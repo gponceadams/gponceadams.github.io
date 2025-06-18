@@ -26,6 +26,7 @@ nav {
 	    position: static;         /* no longer absolutely positioned */
 	    margin-left: auto;        /* push the nav to the right */
 	    display: flex;            /* lay links out in a row */
+	    justify-content: flex-end;
 	    align-items: center;      /* vertically center them */
 	    gap: 1.5rem;              /* space between each <a> */
 	
