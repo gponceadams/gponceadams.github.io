@@ -361,3 +361,8 @@ header nav {
   margin-bottom: 2rem;
   color: $accent-color; /* #c3512d */
 }
+section.publications,
+section.preparation,
+section.presentations {
+  padding-bottom: 30px;  // less space before the next section
+}
