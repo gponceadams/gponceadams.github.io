@@ -22,6 +22,7 @@ nav {
 
 	@media #{$mid-point} {
 	    /* ← apply these to THIS <nav>, not a nested one */
+	    width: auto;
 	    position: static;         /* no longer absolutely positioned */
 	    margin-left: auto;        /* push the nav to the right */
 	    display: flex;            /* lay links out in a row */
