@@ -65,6 +65,13 @@ section {
 section + section {
 	padding-top: 0;
 }
+section.publications,
+section.preparation,
+section.presentations,
+section.conference-presentations {
+  // new, lower top & bottom padding
+  padding: 40px 0;
+}
 
 .subtext {
 	margin-top: 10px;
@@ -361,9 +368,4 @@ header nav {
   text-align: center;
   margin-bottom: 2rem;
   color: $accent-color; /* #c3512d */
-}
-section.publications,
-section.preparation,
-section.presentations {
-  padding-bottom: 20px;  // less space before the next section
 }
